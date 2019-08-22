@@ -30,7 +30,7 @@
 
             {{"<!-- Contact Form -->" | safeHTML}}
             <div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                <form id="contact-form" class="form-meghna" method="POST" action="https://formspree.io/admin@ywamsendai.org" role="form">
+                <form id="contact-form" class="form-meghna" method="POST" action="https://formspree.io/admin@ywamsendai.org">
                     <!-- <input name="e-mail" type="text" id="e-mail" autocomplete="off"> -->
                     <div class="form-group">
                         <input type="text" placeholder="{{ $data.contact.name }}" class="form-control" name="name" id="name">
@@ -53,7 +53,8 @@
                         Sorry, don't know what happened. Try later :(
                     </div> -->
                     <div id="cf-submit">
-                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="{{ $data.contact.submit }}">
+					<button type="submit" id="contact-submit" class="btn btn-transparent">{{ $data.contact.submit }}</button>
+                        <!--<input type="submit" id="contact-submit" class="btn btn-transparent" value="{{ $data.contact.submit }}">-->
                     </div>
                 </form>
             </div>
