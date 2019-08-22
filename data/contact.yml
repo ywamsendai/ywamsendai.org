@@ -1,0 +1,15 @@
+enable : true
+heading : Get In
+headingSpan : Touch
+title : Contact Details
+content : Please feel free to get in touch about anything, whether you want to ask about our ministries, staffing opportunities, visiting us, or being a potential student on a future school!
+enable_maps : true
+mapLatitude : 38.273240
+mapLongitude: 140.757710
+contactDetails :
+  - icon : tf-map-pin
+    info : "Ayashi, Sendai, Miyagi, Japan"
+    
+  - icon : tf-ion-ios-email-outline
+    info : "Email: info@ywamsendai.org"
+    

@@ -1,0 +1,161 @@
+baseURL = "https://ywamsendai.org"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "YWAM Sendai"
+summaryLength = 10
+
+[languages]
+  [languages.en]
+    contentDir = "content/english"
+    languageName = "English"
+    title = "YWAM Sendai"
+    weight = 1
+	
+	# English Banner Section
+    [languages.en.params.banner]
+    enable = true
+    bgImage = "images/slider/fullsizeoutput_1bea.jpeg"
+    icon = ""
+    heading = "YWAM Sendai"
+    content= "To know God and to make Him known to the unreached people of North-East Japan in an authentically Japanese way"
+    btn = true
+    btnText="Ministries"
+    btnURL="#services"
+	  
+	# English Menu
+	[[languages.en.menu.nav]]
+    name = "About Us"
+    URL = "about"
+    weight = 2
+	   
+    [[languages.en.menu.nav]]
+    name = "Ministries"
+    URL = "services"
+    weight = 3
+	
+	[[languages.ja.menu.nav]]
+    name = "Join Us"
+    URL = "join"
+    weight = 4
+
+    [[languages.en.menu.nav]]
+    name = "Contact"
+    URL = "contact-us"
+    weight = 5
+	  
+  [languages.ja]
+    contentDir = "content/japanese"
+    languageName = "日本語"
+    title = "仙台ワイワム"
+    weight = 2
+	
+	# Japanese Banner Section
+    [languages.ja.params.banner]
+    enable = true
+    bgImage = "images/slider/fullsizeoutput_1bea.jpeg"
+    icon = ""
+    heading = "仙台ワイワム"
+    content= "主を知り、主を知らせる！"
+    btn = true
+    btnText="Ministries"
+    btnURL="#services"
+	
+	# Japanese Menu
+	[[languages.ja.menu.nav]]
+    name = "について"
+    URL = "about"
+    weight = 2
+	   
+    [[languages.ja.menu.nav]]
+    name = "ミニストリー"
+    URL = "services"
+    weight = 3
+
+    [[languages.ja.menu.nav]]
+    name = "Join Us"
+    URL = "join"
+    weight = 4
+
+    [[languages.ja.menu.nav]]
+    name = "コンタクト"
+    URL = "contact-us"
+    weight = 5
+
+
+[taxonomies]
+  author = "author"
+  category = "categories"
+  tag = "tags"
+
+# Site params
+[params]
+home= "Home"
+logo = "images/YWAMIconWhitesmall.png"
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+# Meta data
+description = "Responsive Multipurpose Parallax HTML5 Template"
+author = "Themefisher"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+custom_css = ["css/custom.css"]
+
+
+    # call to action
+    [params.cta]
+    enable = true
+    title = "Feeling Called?"
+    content = "If you feel you may be called to Japan, and if you are willing to drop everything and follow the leading of Holy Spirit to love the Japanese, then we would love to have you join our team! Find more info on our Wiki (click the button below). The first step is to get in touch, introduce yourself, tell us about what God is placing on your heart, and ask us questions! We will guide you through the process to join the team."
+    btnURL = "https://wiki.ywamsendai.org/ywam/join/"
+    btnText = "Join us!"
+	
+	 # about ywam
+    [params.ywam]
+    enable = true
+    btnURL = "https://wiki.ywamsendai.org/ywam/ywam/"
+    btnText = "Learn more..."
+
+    # counter
+    [params.counter]
+    enable = true
+    bgImage = "images/backgrounds/bg-1.jpg"
+        [[params.counter.counterItem]]
+        title = "Happy Clients"
+        icon = "tf-ion-android-happy"
+        count = "320"
+
+        [[params.counter.counterItem]]
+        title = "Projects completed"
+        icon = "tf-ion-archive"
+        count = "565"
+
+        [[params.counter.counterItem]]
+        title = "Positive feedback"
+        icon = "tf-ion-thumbsup"
+        count = "95"
+
+        [[params.counter.counterItem]]
+        title = "Cups of Coffee"
+        icon = "tf-ion-coffee"
+        count = "2500"
+
+    # footer
+    [params.footer]
+        copyright = "宗教法人　世界青年宣教会"
+        copyrightURL = "https://ywamsendai.org"
+
+        # social Icons
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-facebook"
+        url = "https://facebook.com/ywamsendai"
+
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-twitter"
+        url = "https://twitter.com/ywamsendai"
+
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-youtube"
+        url = "https://www.youtube.com/channel/UCH4EWvQQGs2VEtYtH_Pr_lw"
+
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-instagram"
+        url = "https://instagram.com/ywamsendai"

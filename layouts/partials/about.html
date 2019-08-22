@@ -1,0 +1,81 @@
+{{ if .Site.Data.about.enable}}
+{{"<!-- Start About Section -->" | safeHTML}}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section class="bg-one about section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {{"<!-- section title -->" | safeHTML}}
+                <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+                    <h2>{{ $data.about.heading}} <span class="color">{{ $data.about.headingSpan}}</span> </h2>
+                    <div class="border-meghna"></div>
+                </div>
+            </div>
+            {{"<!-- /section title -->" | safeHTML}}
+			
+			<div class="col-lg-12" style="padding-bottom: 5%;">
+                {{"<!-- video -->" | safeHTML}}
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/kTmWDvEoNMM?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+            </div>
+            {{"<!-- /video -->" | safeHTML}}
+		
+
+            {{ range $data.about.aboutItem }}
+            {{"<!-- About item -->" | safeHTML}}
+            <div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+                <div class="block">
+                    <div class="icon-box">
+                        {{with .icon}}<i class="{{ . }}"></i>{{ end }}
+                    </div>
+                    {{"<!-- Express About Yourself -->" | safeHTML}}
+                    <div class="content text-center">
+                        {{ with .title }}<h3 class="ddd">{{ . }}</h3>{{ end }}
+                        {{ with .content}}  <p>{{ . }}</p>{{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{"<!-- /about -->" | safeHTML}}
+{{ end }}
+
+{{ if .Site.Data.about2.enable }}
+{{"<!-- about 2 -->" | safeHTML}}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section class="section section-bg about-2 padding-0" id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 padding-0 ">
+                <img class="img-fluid" src="{{ $data.about2.image | absURL}}" alt="image">
+            </div>
+            <div class="col-lg-6">
+                <div class="content-block">
+                    {{with $data.about2.title}} <h2>{{ . }}</h2> {{ end }}
+                    {{with $data.about2.description}} <p>{{ . }}</p> {{ end }}
+                    {{with $data.about2.description2}} <p>{{ . }}</p> {{ end }}
+                    <div class="row">
+                        {{ range $data.about2.aboutItem }}
+                        <div class="col-lg-6">
+                            <div class="media">
+                                <div class="align-self-start mr-3">
+                                    {{with .icon}} <i class="{{ . }}"></i> {{ end }}
+                                </div>
+                                <div class="media-body">
+                                    {{with .title}} <h4 class="media-heading">{{ . }}</h4>{{ end }}
+                                    {{ with .content}} <p>{{ . }}</p> {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- /about 2 -->" | safeHTML}}
+{{ end }}
