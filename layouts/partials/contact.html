@@ -1,6 +1,6 @@
-{{ if .Site.Data.contact.enable }}
-{{"<!-- Start Contact Us -->" | safeHTML}}
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.contact.enable }}
+{{"<!-- Start Contact Us -->" | safeHTML}}
 <section id="contact-us" class="contact-us section-bg">
     <div class="container pb-5">
         <div class="row">
@@ -30,27 +30,27 @@
 
             {{"<!-- Contact Form -->" | safeHTML}}
             <div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                <form id="contact-form" class="form-meghna" method="post" action="https://formspree.io/admin@ywamsendai.org" role="form">
+                <form id="contact-form" class="form-meghna" method="POST" action="https://formspree.io/admin@ywamsendai.org" role="form">
                     <input name="e-mail" type="text" id="e-mail" autocomplete="off">
                     <div class="form-group">
                         <input type="text" placeholder="{{ $data.contact.name }}" class="form-control" name="name" id="name">
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="{{ $data.contact.email }}" class="form-control" name="email" id="email">
+                        <input type="email" placeholder="{{ $data.contact.email }}" class="form-control" name="_replyto" id="email">
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="{{ $data.contact.subject }}" class="form-control" name="subject" id="subject">
+                        <input type="hidden" placeholder="{{ $data.contact.subject }}" class="form-control" name="_subject" id="subject" value="Website Contact">
                     </div>
                     <div class="form-group">
                         <textarea rows="6" placeholder="{{ $data.contact.message }}" class="form-control" name="message"
                             id="message"></textarea>
                     </div>
-                    <div id="mail-success" class="success">
+                    <!-- <div id="mail-success" class="success">
                         Thank you. The Mailman is on His Way :)
                     </div>
                     <div id="mail-fail" class="error">
                         Sorry, don't know what happened. Try later :(
-                    </div>
+                    </div> -->
                     <div id="cf-submit">
                         <input type="submit" id="contact-submit" class="btn btn-transparent" value="{{ $data.contact.submit }}">
                     </div>
@@ -62,7 +62,7 @@
     {{ if $data.contact.enable_maps }}
     {{"<!-- Google Map -->" | safeHTML}}
     <div class="google-map">
-        <div id="map-canvas" {{ with .Site.Data.contact.mapLatitude }} data-latitude="{{ . }}" {{ end }} {{ with .Site.Data.contact.mapLongitude }} data-longitude="{{ . }}" {{ end }}></div>
+        <div id="map-canvas" {{ with $data.contact.mapLatitude }} data-latitude="{{ . }}" {{ end }} {{ with $data.contact.mapLongitude }} data-longitude="{{ . }}" {{ end }}></div>
     </div>
     {{ end }}
 </section>
