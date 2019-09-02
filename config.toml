@@ -116,8 +116,10 @@ custom_css = ["css/custom.css"]
 	# about ywam
     [params.ywam]
     enable = true
-    btnURL = "https://wiki.ywamsendai.org/ywam/ywam/"
-    btnText = "Learn more..."
+    btnURL1 = "https://wiki.ywamsendai.org/ywam/ywam/"
+    btnText1 = "History of YWAM"
+	btnURL2 = "https://wiki.ywamsendai.org/ywam/values/"
+    btnText2 = "Our Beliefs and Foundational Values"
 	
 	# join
     [params.join]

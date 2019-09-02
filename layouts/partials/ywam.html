@@ -19,8 +19,9 @@
             <div class="col-lg-6">
                 <div class="content-block">
                     {{with $data.ywam.description}} <p>{{ . }}</p> {{ end }}
+					<a href="{{ .Site.Params.ywam.btnURL1 }}" class="btn btn-main">{{ with .Site.Params.ywam.btnText1 }} {{ . }} {{end}}</a><br><br>
                     {{with $data.ywam.description2}} <p>{{ . }}</p> {{ end }}
-					<a href="{{ .Site.Params.ywam.btnURL }}" class="btn btn-main">{{ with .Site.Params.ywam.btnText }} {{ . }} {{end}}</a>
+					<a href="{{ .Site.Params.ywam.btnURL2 }}" class="btn btn-main">{{ with .Site.Params.ywam.btnText2 }} {{ . }} {{end}}</a>
                     <div class="row">
                         {{ range $data.ywam.aboutItem }}
                         <div class="col-lg-6">
