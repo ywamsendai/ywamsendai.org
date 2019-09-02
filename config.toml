@@ -19,8 +19,8 @@ summaryLength = 10
     heading = "YWAM Sendai"
     content= "To know God and to make Him known to the unreached people of North-East Japan in an authentically Japanese way"
     btn = true
-    btnText="Ministries"
-    btnURL="#services"
+    btnText="Join Us"
+    btnURL="#join"
 	  
 	# English Menu
 	[[languages.en.menu.nav]]
@@ -33,15 +33,20 @@ summaryLength = 10
     URL = "services"
     weight = 3
 	
-	[[languages.ja.menu.nav]]
+	[[languages.en.menu.nav]]
+    name = "News"
+    URL = "news"
+    weight = 4
+	
+	[[languages.en.menu.nav]]
     name = "Join Us"
     URL = "join"
-    weight = 4
+    weight = 5
 
     [[languages.en.menu.nav]]
     name = "Contact"
     URL = "contact-us"
-    weight = 5
+    weight = 6
 	  
   [languages.ja]
     contentDir = "content/japanese"
@@ -100,24 +105,36 @@ googleAnalitycsID = "Your ID"
 custom_css = ["css/custom.css"]
 
 
-    # call to action
-    [params.cta]
+    # news
+    [params.news]
     enable = true
-    title = "Feeling Called?"
-    content = "If you feel you may be called to Japan, and if you are willing to drop everything and follow the leading of Holy Spirit to love the Japanese, then we would love to have you join our team! Find more info on our Wiki (click the button below). The first step is to get in touch, introduce yourself, tell us about what God is placing on your heart, and ask us questions! We will guide you through the process to join the team."
-    btnURL = "https://wiki.ywamsendai.org/ywam/join/"
-    btnText = "Join us!"
+    title = "Latest News"
+    content = "If you want to find out what we have been up to recently, please follow us on the social networks (links at bottom of page), or explore our blog posts over on Medium!"
+    btnURL = "https://medium.com/ywamsendai"
+    btnText = "Our Blog"
 	
-	 # about ywam
+	# about ywam
     [params.ywam]
     enable = true
     btnURL = "https://wiki.ywamsendai.org/ywam/ywam/"
     btnText = "Learn more..."
+	
+	# join
+    [params.join]
+    enable = true
+    btnURL = "https://wiki.ywamsendai.org/ywam/join"
+    btnText = "Find out more"
+	
+	# contact
+    [params.contact]
+    enable = true
+	btnURL = "https://riot.im/app/#/group/+ywamsendai:matrix.org"
+	btnText = "Our Riot Community"
 
     # counter
     [params.counter]
     enable = true
-    bgImage = "images/backgrounds/bg-1.jpg"
+    bgImage = "images/backgrounds/fullsizeoutput_1a3521.jpeg"
         [[params.counter.counterItem]]
         title = "Happy Clients"
         icon = "tf-ion-android-happy"
@@ -142,6 +159,8 @@ custom_css = ["css/custom.css"]
     [params.footer]
         copyright = "宗教法人　世界青年宣教会"
         copyrightURL = "https://ywamsendai.org"
+		ywam = "A YWAM Ministry."
+        ywamURL = "https://ywam.org"
 
         # social Icons
         [[params.footer.socialIcon]]

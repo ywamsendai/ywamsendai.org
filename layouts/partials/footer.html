@@ -19,9 +19,11 @@
 						<img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" />
 					</a>
 					<br>
-					<p>Design And Developed by <a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a>. Copyright &copy; <script>
+					<p>Designed And Developed by <a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a>. Copyright &copy; <script>
 							document.write(new Date().getFullYear())
-						</script>. All Rights Reserved.</p>
+						</script>. All Rights Reserved.
+						<br>
+						<a href="{{ .Site.Params.footer.ywamURL | absURL }}"> {{ with .Site.Params.footer.ywam }} {{ . }} {{ end }} </a></p>
 				</div>
 			</div>
 		</div>

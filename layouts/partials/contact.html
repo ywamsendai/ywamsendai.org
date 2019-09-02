@@ -18,14 +18,15 @@
             <div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
                 {{ with $data.contact.title }}<h3>{{ . }}</h3> {{ end }}
                 {{ with $data.contact.content }} <p> {{ . }} </p> {{ end }}
-                <div class="contact-details">
+				<a href="{{ .Site.Params.contact.btnURL }}" class="btn btn-main">{{ with .Site.Params.contact.btnText }} {{ . }} {{end}}</a>
+               <!-- <div class="contact-details">
                     {{ range $data.contact.contactDetails }}
                     <div class="con-info clearfix">
                         <i class="{{ .icon }}"></i>
                         <span>{{ .info }}</span>
                     </div>
                     {{ end }}
-                </div>
+                </div> -->
             </div>
 
             {{"<!-- Contact Form -->" | safeHTML}}
