@@ -23,11 +23,11 @@
                                 {{ range $.Site.Menus.nav }}
                                 <li class="nav-item"><a class="nav-link" data-scroll href="#{{ .URL }}">{{ .Name }}</a></li>
                                 {{ end }}
-								{{ if .IsTranslated }}
+								<!-- {{ if .IsTranslated }}
 								<li class="nav-item">
 								{{ range .Translations }}
 								<a class="nav-link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>{{ end}}</li>
-								{{ end }}
+								{{ end }} -->
                         </ul>
                 </div>
                 {{ else }}
@@ -37,11 +37,11 @@
                                 {{ range $.Site.Menus.nav }}
                                 <li class="nav-item"><a class="nav-link" data-scroll href="{{ $.Site.BaseURL }}#{{ .URL }}">{{ .Name }}</a></li>
                                 {{ end }}
-								{{ if .IsTranslated }}
+								<!-- {{ if .IsTranslated }}
 								<li class="nav-item">
 								{{ range .Translations }}
 								<a class="nav-link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>{{ end}}</li>
-								{{ end }}
+								{{ end }} -->
                         </ul>
                 </div>
                 {{ end }}
