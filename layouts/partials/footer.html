@@ -1,5 +1,5 @@
 {{"<!-- end Contact Area -->" | safeHTML}}
-<footer id="footer" class="bg-one">
+<footer id="footer" class="bg-green">
 	<div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="500ms">
 			<div class="col-xl-12">
@@ -19,11 +19,11 @@
 						<img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" />
 					</a>
 					<br>
-					<p>Designed And Developed by <a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a>. Copyright &copy; <script>
+					<p>Copyright &copy; <script>
 							document.write(new Date().getFullYear())
-						</script>. All Rights Reserved.
+						</script> <a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a>, an Operating Location of <a href="{{ .Site.Params.footer.ywamjapanURL | absURL }}"> {{ with .Site.Params.footer.ywamjapan }} {{ . }} {{ end }} </a>. All Rights Reserved.
 						<br>
-						<a href="{{ .Site.Params.footer.ywamURL | absURL }}"> {{ with .Site.Params.footer.ywam }} {{ . }} {{ end }} </a></p>
+						<a href="{{ .Site.Params.footer.ywamURL | absURL }}"> {{ with .Site.Params.footer.ywam }} {{ . }} {{ end }} </a>.</p>
 				</div>
 			</div>
 		</div>

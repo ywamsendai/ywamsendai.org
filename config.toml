@@ -159,9 +159,11 @@ custom_css = ["css/custom.css"]
 
     # footer
     [params.footer]
-        copyright = "宗教法人　世界青年宣教会"
+        copyright = "YWAM Sendai"
         copyrightURL = "https://ywamsendai.org"
-		ywam = "A YWAM Ministry."
+		ywamjapan = "YWAM Japan"
+		ywamjapanURL = "https://ywamjapan.org"
+		ywam = "A YWAM Ministry"
         ywamURL = "https://ywam.org"
 
         # social Icons
