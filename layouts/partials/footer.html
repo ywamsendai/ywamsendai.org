@@ -1,3 +1,5 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.footer.enable }}
 {{"<!-- end Contact Area -->" | safeHTML}}
 <footer id="footer" class="bg-green">
 	<div class="container">
@@ -19,11 +21,11 @@
 						<img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" />
 					</a>
 					<br>
-					<p>Copyright &copy; <script>
+					<p>{{ with $data.footer.copyright }} {{ . }} {{ end }} &copy; <script>
 							document.write(new Date().getFullYear())
-						</script> <a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a>, an Operating Location of <a href="{{ .Site.Params.footer.ywamjapanURL | absURL }}"> {{ with .Site.Params.footer.ywamjapan }} {{ . }} {{ end }} </a>. All Rights Reserved.
+						</script> <a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a> {{ with $data.footer.content1 }} {{ . }} {{ end }} <a href="{{ .Site.Params.footer.ywamjapanURL | absURL }}"> {{ with .Site.Params.footer.ywamjapan }} {{ . }} {{ end }} </a> {{ with $data.footer.content2 }} {{ . }} {{ end }}
 						<br>
-						<a href="{{ .Site.Params.footer.ywamURL | absURL }}"> {{ with .Site.Params.footer.ywam }} {{ . }} {{ end }} </a>.</p>
+						<a href="{{ .Site.Params.footer.ywamURL | absURL }}"> {{ with .Site.Params.footer.ywam }} {{ . }} {{ end }} </a></p>
 				</div>
 			</div>
 		</div>
@@ -66,3 +68,4 @@
 				ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
 				ga('send', 'pageview');
 		</script>
+{{ end }}

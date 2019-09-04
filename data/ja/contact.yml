@@ -1,8 +1,8 @@
 enable : true
-heading : 連絡
-headingSpan : してください
+heading : お問い
+headingSpan : 合わせ
 title : 連絡先
-content : Please feel free to get in touch about anything, whether you want to ask about our ministries, staffing opportunities, visiting us, or being a potential student on a future school!
+content : Please feel free to get in touch about anything, whether you want to ask about our ministries, staffing opportunities, visiting us, or being a potential student on a future school! You can also join our "virtual base" and hang out with us over on Riot by clicking this button!
 enable_maps : true
 mapLatitude : 38.273240
 mapLongitude: 140.757710
@@ -11,9 +11,3 @@ email : メールアドレス
 subject : 件名
 message : メッセージ
 submit : 送信
-contactDetails :
-  - icon : tf-map-pin
-    info : "宮城県仙台市愛子中央"
-    
-  - icon : tf-ion-ios-email-outline
-    info : "メール： info@ywamsendai.org"

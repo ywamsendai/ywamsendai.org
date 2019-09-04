@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "en-us"
+languageCode = "en-gb"
 DefaultContentLanguage = "en"
 title = "YWAM Sendai"
 summaryLength = 10
@@ -62,8 +62,8 @@ summaryLength = 10
     heading = "仙台ワイワム"
     content= "主を知り、主を知らせる！"
     btn = true
-    btnText="Ministries"
-    btnURL="#services"
+    btnText="Join Us"
+    btnURL="#join"
 	
 	# Japanese Menu
 	[[languages.ja.menu.nav]]
@@ -75,16 +75,57 @@ summaryLength = 10
     name = "ミニストリー"
     URL = "services"
     weight = 3
+	
+	[[languages.ja.menu.nav]]
+    name = "ニュース"
+    URL = "news"
+    weight = 4
 
     [[languages.ja.menu.nav]]
     name = "Join Us"
     URL = "join"
-    weight = 4
+    weight = 5
 
     [[languages.ja.menu.nav]]
-    name = "コンタクト"
+    name = "お問い合わせ"
     URL = "contact-us"
-    weight = 5
+    weight = 6
+	
+	[languages.ja.params]
+		description = "仙台ワイワムのホームページ"
+		author = "仙台ワイワム"
+		
+		[languages.ja.params.news]
+			enable = true
+			title = "Latest News"
+			content = "If you want to find out what we have been up to recently, please follow us on the social networks (links at bottom of page), or explore our blog posts over on Medium!"
+			btnURL = "https://medium.com/ywamsendai"
+			btnText = "ブログ"
+			
+		[languages.ja.params.ywam]
+			enable = true
+			btnURL1 = "https://wiki.ywamsendai.org/ywam/ywam/"
+			btnText1 = "ワイワムの歴史"
+			btnURL2 = "https://wiki.ywamsendai.org/ywam/values/"
+			btnText2 = "Our Beliefs and Foundational Values"
+
+		[languages.ja.params.join]
+			enable = true
+			btnURL = "https://wiki.ywamsendai.org/ywam/join"
+			btnText = "Find out more"
+
+		[languages.ja.params.contact]
+			enable = true
+			btnURL = "https://riot.im/app/#/group/+ywamsendai:matrix.org"
+			btnText = "Our Riot Community"
+			
+		[languages.ja.params.footer]
+			copyright = " 仙台ワイワム、"
+			copyrightURL = "https://ywamsendai.org/ja"
+			ywamjapan = "宗教法人　世界青年宣教会（日本ワイワム）。"
+			ywamjapanURL = "https://www.ywamjapan.org"
+			ywam = "国際ワイワムのミニストリー（英語）"
+			ywamURL = "https://ywam.org"
 
 
 [taxonomies]
@@ -98,8 +139,8 @@ home= "Home"
 logo = "images/YWAMIconWhitesmall.png"
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 # Meta data
-description = "Responsive Multipurpose Parallax HTML5 Template"
-author = "Themefisher"
+description = "YWAM Sendai Website"
+author = "YWAM Sendai"
 # Google Analitycs
 googleAnalitycsID = "UA-20132770-3"
 custom_css = ["css/custom.css"]
@@ -159,11 +200,11 @@ custom_css = ["css/custom.css"]
 
     # footer
     [params.footer]
-        copyright = "YWAM Sendai"
+        copyright = " YWAM Sendai,"
         copyrightURL = "https://ywamsendai.org"
-		ywamjapan = "YWAM Japan"
-		ywamjapanURL = "https://ywamjapan.org"
-		ywam = "A YWAM Ministry"
+		ywamjapan = "YWAM Japan."
+		ywamjapanURL = "https://www.ywamjapan.org/top_eg.html"
+		ywam = "A YWAM Ministry."
         ywamURL = "https://ywam.org"
 
         # social Icons
