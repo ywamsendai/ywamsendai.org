@@ -1,0 +1,15 @@
+{{ if .Site.Params.donate.enable}}
+{{"<!-- Start News -->" | safeHTML}}
+<section class="call-to-action section-sm bg-1 overly" id="donate" style='background-image: url("{{ .Site.Params.counter.bgImage | absURL }}")'>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               {{ with .Site.Params.donate.title}} <h2>{{ . }}</h2> {{ end }}
+               {{ with .Site.Params.donate.content }} <p>{{ . }}</p> {{ end }}
+                <a href="{{ .Site.Params.donate.btnURL }}" class="btn btn-main">{{ with .Site.Params.donate.btnText }} {{ . }} {{end}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- Start News Section -->" | safeHTML}}
+{{ end }}

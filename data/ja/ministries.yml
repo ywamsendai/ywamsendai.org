@@ -1,7 +1,7 @@
 enable : true
 heading : Our
 headingSpan : Ministries
-serviceItem :
+ministryItem :
   - icon : tf-ion-android-chat
     title : Evangelism
     content : Over 99% of the people in Tohoku do not know Jesus. We seek the creativity of the Holy Spirit in order to share the gospel – especially by simply sharing our lives with people.

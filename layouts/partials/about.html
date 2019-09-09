@@ -1,6 +1,7 @@
-{{ if .Site.Data.about.enable}}
-{{"<!-- Start About Section -->" | safeHTML}}
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.about.enable}}
+{{"<!-- Start About Section -->" | safeHTML}}
+
 <section class="bg-one about section" id="about">
     <div class="container">
         <div class="row">
@@ -43,9 +44,9 @@
 {{"<!-- /about -->" | safeHTML}}
 {{ end }}
 
-{{ if .Site.Data.about2.enable }}
-{{"<!-- about 2 -->" | safeHTML}}
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.about2.enable }}
+{{"<!-- about 2 -->" | safeHTML}}
 <section class="section section-bg about-2 padding-0" id="about">
     <div class="container-fluid">
         <div class="row">

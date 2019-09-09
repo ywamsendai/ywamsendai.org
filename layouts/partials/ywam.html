@@ -1,6 +1,6 @@
-{{ if .Site.Data.ywam.enable}}
-{{"<!-- Start YWAM Section -->" | safeHTML}}
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.ywam.enable }}
+{{"<!-- Start YWAM Section -->" | safeHTML}}
 <section class="bg-one about section" id="ywam">
     <div class="container">
         <div class="row">
