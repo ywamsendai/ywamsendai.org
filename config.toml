@@ -128,7 +128,7 @@ summaryLength = 10
 			enable = true
 			title = "献金"
 			content = "Each member of our team is supported financially to serve with us in Japan. That being the case, YWAM Sendai has its own expenses, such as ministry expenses. We are also desiring to purchase property for office and meeting space, as well as accommodation for staff, teams, volunteers, and students. We would also like to own a vehicle to make it easier to travel around this region. If you would like to give towards YWAM Sendai, please click the following link for more information!"
-			btnURL = "https://wiki.ywamsendai.org/ywam/finances"
+			btnURL = "https://wiki.ywamsendai.org/ywam/donate"
 			btnText = "More Info"
 
 		[languages.ja.params.contact]
@@ -190,7 +190,7 @@ custom_css = ["css/custom.css"]
     enable = true
     title = "Donate"
     content = "Each member of our team is supported financially to serve with us in Japan. That being the case, YWAM Sendai has its own expenses, such as ministry expenses. We are also desiring to purchase property for office and meeting space, as well as accommodation for staff, teams, volunteers, and students. We would also like to own a vehicle to make it easier to travel around this region. If you would like to give towards YWAM Sendai, please click the following link for more information!"
-    btnURL = "https://wiki.ywamsendai.org/ywam/finances"
+    btnURL = "https://wiki.ywamsendai.org/ywam/donate"
     btnText = "More Info"
 	
 	# contact
