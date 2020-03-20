@@ -10,39 +10,39 @@ summaryLength = 10
     languageName = "English"
     title = "YWAM Sendai"
     weight = 1
-	
+
 	# English Banner Section
     [languages.en.params.banner]
     enable = true
     bgImage = "images/slider/fullsizeoutput_1bea.jpeg"
     icon = ""
     heading = "YWAM Sendai"
-    content= "To know God and to make Him known to the unreached people of North-East Japan in an authentically Japanese way"
+    content= "To know God and make Him known to the Japanese."
     btn = true
     btnText="Join Us"
     btnURL="#join"
-	  
+
 	# English Menu
 	[[languages.en.menu.nav]]
     name = "About Us"
     URL = "about"
     weight = 2
-	   
+
     [[languages.en.menu.nav]]
     name = "Ministries"
     URL = "ministries"
     weight = 3
-	
+
 	[[languages.en.menu.nav]]
     name = "News"
     URL = "news"
     weight = 4
-	
+
 	[[languages.en.menu.nav]]
     name = "Join Us"
     URL = "join"
     weight = 5
-	
+
 	[[languages.en.menu.nav]]
     name = "Donate"
     URL = "donate"
@@ -52,35 +52,35 @@ summaryLength = 10
     name = "Contact"
     URL = "contact-us"
     weight = 7
-	  
+
   [languages.ja]
     contentDir = "content/japanese"
     languageName = "日本語"
     title = "仙台ワイワム"
     weight = 2
-	
+
 	# Japanese Banner Section
     [languages.ja.params.banner]
     enable = true
     bgImage = "images/slider/fullsizeoutput_1bea.jpeg"
     icon = ""
     heading = "仙台ワイワム"
-    content= "主を知り、主を知らせる！"
+    content= "神を知り、神を知らせる。"
     btn = true
     btnText="参加"
     btnURL="#join"
-	
+
 	# Japanese Menu
 	[[languages.ja.menu.nav]]
     name = "について"
     URL = "about"
     weight = 2
-	   
+
     [[languages.ja.menu.nav]]
     name = "ミニストリー"
     URL = "ministries"
     weight = 3
-	
+
 	[[languages.ja.menu.nav]]
     name = "ニュース"
     URL = "news"
@@ -90,7 +90,7 @@ summaryLength = 10
     name = "参加"
     URL = "join"
     weight = 5
-	
+
 	[[languages.ja.menu.nav]]
     name = "献金"
     URL = "donate"
@@ -100,18 +100,18 @@ summaryLength = 10
     name = "お問い合わせ"
     URL = "contact-us"
     weight = 7
-	
+
 	[languages.ja.params]
 		description = "仙台ワイワムのホームページ"
 		author = "仙台ワイワム"
-		
+
 		[languages.ja.params.news]
 			enable = true
 			title = "Latest News"
 			content = "If you want to find out what we have been up to recently, please follow us on the social networks (links at bottom of page), or explore our blog posts over on Medium!"
 			btnURL = "https://medium.com/ywamsendai"
 			btnText = "ブログ"
-			
+
 		[languages.ja.params.ywam]
 			enable = true
 			btnURL1 = "https://wiki.ywamsendai.org/ywam/ywam/"
@@ -123,7 +123,7 @@ summaryLength = 10
 			enable = true
 			btnURL = "https://wiki.ywamsendai.org/ywam/join"
 			btnText = "Find out more"
-			
+
 		[languages.ja.params.donate]
 			enable = true
 			title = "献金"
@@ -135,14 +135,14 @@ summaryLength = 10
 			enable = true
 			btnURL = "https://riot.im/app/#/group/+ywamsendai:matrix.org"
 			btnText = "Our Riot Community"
-			
+
 		[languages.ja.params.footer]
 			copyright = " 仙台ワイワム、"
 			copyrightURL = "https://ywamsendai.org/ja"
 			ywamjapan = "宗教法人　世界青年宣教会（日本ワイワム）。"
 			ywamjapanURL = "https://www.ywamjapan.org"
 			ywam = "国際ワイワムのミニストリー（英語）"
-			ywamURL = "https://ywam.org"
+			ywamURL = "https://www.ywam.org"
 
 
 [taxonomies]
@@ -170,7 +170,7 @@ custom_css = ["css/custom.css"]
     content = "If you want to find out what we have been up to recently, please follow us on the social networks (links at bottom of page), or explore our blog posts over on Medium!"
     btnURL = "https://medium.com/ywamsendai"
     btnText = "Our Blog"
-	
+
 	# about ywam
     [params.ywam]
     enable = true
@@ -178,13 +178,13 @@ custom_css = ["css/custom.css"]
     btnText1 = "History of YWAM"
 	btnURL2 = "https://wiki.ywamsendai.org/ywam/values/"
     btnText2 = "Our Beliefs and Foundational Values"
-	
+
 	# join
     [params.join]
     enable = true
     btnURL = "https://wiki.ywamsendai.org/ywam/join"
     btnText = "Find out more"
-	
+
 	# donate
     [params.donate]
     enable = true
@@ -192,7 +192,7 @@ custom_css = ["css/custom.css"]
     content = "Each member of our team is supported financially to serve with us in Japan. That being the case, YWAM Sendai has its own expenses, such as ministry expenses. We are also desiring to purchase property for office and meeting space, as well as accommodation for staff, teams, volunteers, and students. We would also like to own a vehicle to make it easier to travel around this region. If you would like to give towards YWAM Sendai, please click the following link for more information!"
     btnURL = "https://wiki.ywamsendai.org/ywam/donate"
     btnText = "More Info"
-	
+
 	# contact
     [params.contact]
     enable = true
@@ -229,8 +229,8 @@ custom_css = ["css/custom.css"]
         copyrightURL = "https://ywamsendai.org"
 		ywamjapan = "YWAM Japan."
 		ywamjapanURL = "https://www.ywamjapan.org/top_eg.html"
-		ywam = "A YWAM Ministry."
-        ywamURL = "https://ywam.org"
+		ywam = "Part of the YWAM Family of Ministries."
+        ywamURL = "https://www.ywam.org"
 
         # social Icons
         [[params.footer.socialIcon]]
